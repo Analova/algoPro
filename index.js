@@ -1,4 +1,6 @@
-//**********************/ REVERSE A STRING /*****************/
+// CHALLENGE 1: REVERSE A STRING
+// Return a string in reverse
+// ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
   // return str
@@ -39,4 +41,17 @@ function reverseString(str) {
   //////////////////////
 
   return str.split("").reduce((revString, char) => char + revString, "");
+}
+
+// CHALLENGE 2: VALIDATE A PALINDROME
+// Return true if palindrome and false if not
+// ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
+
+function isPalindrome(str) {
+  const revString = str
+    .split("")
+    .reverse()
+    .join("");
+
+  return revString === str;
 }
