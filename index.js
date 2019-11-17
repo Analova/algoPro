@@ -95,9 +95,9 @@ function capitalizeLetters(str) {
 function maxCharacter(str) {
   const charMap = {};
   let maxNum = 0;
-  let maxChar = '';
+  let maxChar = "";
 
-  str.split('').forEach(function (char) {
+  str.split("").forEach(function(char) {
     if (charMap[char]) {
       charMap[char]++;
     } else {
@@ -112,5 +112,6 @@ function maxCharacter(str) {
       maxChar = char;
     }
   }
+}
 
-  return maxChar;
+return maxChar;
