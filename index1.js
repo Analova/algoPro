@@ -127,7 +127,7 @@ const output = letterChanges("Hello There");
 
 console.log(output);
 
-// CHALLENGE 1: ADD ALL NUMBERS
+// ADD ALL NUMBERS
 // Return a sum of all parameters entered regardless of the amount of numbers - NO ARRAYS
 // ex. addAll(2,5,6,7) === 20
 
@@ -146,7 +146,7 @@ function addAll(...numbers) {
   return numbers.reduce((acc, cur) => acc + cur);
 }
 
-// CHALLENGE 2: SUM ALL PRIMES
+// SUM ALL PRIMES
 // Pass in a number to loop up to and add all of the prime numbers. A prime number is a whole number greater than 1 whose only factors are 1 and itself
 // ex. sumAllPrimes(10) == 17
 
@@ -169,6 +169,8 @@ function sumAllPrimes(num) {
   }
   return total;
 }
+
+// PASSWORD VALIDATOR
 // Write a isValidPassword function
 // It accepts 2 arguments: password and username
 // Password must:
